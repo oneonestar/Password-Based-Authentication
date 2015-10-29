@@ -209,7 +209,6 @@ int encrypt(string plaintext, unsigned char *encrypted, int *len) {
 	int ret;
 	unsigned char key[32], iv[16];	//256 bit key
 	unsigned char ciphertext[10000];
-	unsigned char plaintext2[10000];
 	unsigned char tag[16];
 
 	if (!RAND_bytes(key, sizeof key)) handleErrors();
@@ -304,7 +303,6 @@ void CreateUser::Save(const string filename) {
 
 	char *base64encode;
 	Base64Encode(encrypted, len, &base64encode);
-	printf("%s\n", base64encode);
 	//write to file
 	fwrite(base64encode, sizeof(char), strlen(base64encode), f);
 	fclose(f);

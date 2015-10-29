@@ -157,7 +157,6 @@ bool AuthenticateUser::VerifyUser(const string username, const string password) 
 }
 
 void AuthenticateUser::Load(const string filename) {
-	int len;
 	unsigned char ciphertext[65535];
 	//open file
 	FILE *f = fopen(filename.c_str(), "rb");
@@ -204,7 +203,7 @@ void AuthenticateUser::Load(const string filename) {
 	while (p) {
 		if(strlen(p)<=1) break;
 		char username[50];
-		char password[50];
+		char password[150];
 		char* pos = strchr(p, ':');
 		strncpy(username, p, pos-p);
 		strncpy(password, pos+1, 150);
