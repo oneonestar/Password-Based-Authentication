@@ -4,6 +4,8 @@
 #include <cstdio>
 #include <cstring>
 #include <cstdlib>
+#include <openssl/evp.h>
+
 extern "C" {
 	#include "libscrypt.h"
 	#include "b64.h"
@@ -29,6 +31,10 @@ class CreateUser {
 void CreateUser::AddUser(const string username, const string password) {
 	string MCF = create_mcf(password.c_str());
 	userlist.insert( pair<string, string>(username, MCF) );
+}
+
+void CreateUser::Save(const string filename) {
+	//open file
 }
 
 void CreateUser::Print() {
