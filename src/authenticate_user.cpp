@@ -66,7 +66,8 @@ unsigned char publicKey[]="-----BEGIN PUBLIC KEY-----\n"\
 "-----END PUBLIC KEY-----\n";
 
 
-#define MAX_USERNAME 50
+#define MAX_USERNAME 150
+#define MAX_PASSWORD 150
 
 using namespace std;
 
@@ -156,10 +157,21 @@ bool AuthenticateUser::VerifyUser(const string username, const string password) 
 	}
 }
 
+void fileError() {
+	cerr << "File error!" << endl;
+	exit(EXIT_FAILURE);
+}
+
+unsigned int toInt(char c) {
+	if(c >= '0' && c <= '9') return c - '0';
+	if(c >= 'A' && c <= 'F') return 10 + c - 'A';
+	return 255;
+}
+
 void AuthenticateUser::Load(const string filename) {
 	unsigned char ciphertext[65535];
 	//open file
-	FILE *f = fopen(filename.c_str(), "rb");
+	FILE *f = fopen(filename.c_str(), "r");
 	if (!f) {
 		perror("Error in open the file");
 		exit(EXIT_FAILURE);
@@ -170,43 +182,39 @@ void AuthenticateUser::Load(const string filename) {
 	int ret;
 	unsigned char rsa_key_iv_tag[512];
 	unsigned char key_iv_tag[512];
-	//unsigned char key[32], iv[16];	//256 bit key
-	//unsigned char tag[16];
 
-	//fgets(b64file, sizeof(b64file), f);
-	ret = fread(b64file, sizeof(char), sizeof(b64file), f);
-	b64file[ret] = '\0';
-	if (ret<=512) {
-		cerr << "Failed to decrypt file!" << endl;
-		exit(EXIT_FAILURE);
-	}
-	size_t length = Base64decode_len(b64file)-2;
+	size_t length = fread(b64file, sizeof(char), sizeof(b64file), f)/2;
 	char *base64DecodeOutput = new char[length+2];
-	Base64decode(base64DecodeOutput, b64file);
+	char *pos = base64DecodeOutput;
+	for(int i=0; i<length; i++) {
+		base64DecodeOutput[i] = 16 * toInt(b64file[i*2]) + toInt(b64file[i*2+1]);
+	}
+	//if (length<512)	fileError();
+	//Base64decode(base64DecodeOutput, b64file);
 	memcpy(rsa_key_iv_tag, base64DecodeOutput, 512);
 	memcpy(ciphertext, base64DecodeOutput+512, length-512);
 	ret = length-512;
 
 	int decrypted_length = public_decrypt(rsa_key_iv_tag, 512, publicKey, key_iv_tag);
 	if(decrypted_length == -1) {
-		printLastError("Public Decrypt failed");
-		exit(0);
+		cerr << "RSA decryption failed!" << endl;
+		exit(EXIT_FAILURE);
 	}
 
 	ret = __decrypt(ciphertext, ret, key_iv_tag, key_iv_tag+32, key_iv_tag+32+16, plaintext);
 	if(ret==-1) {
-		perror("Failed to decrypt file!\n");
+		cerr << "Failed to decrypt file!" << endl;
 		exit(EXIT_FAILURE);
 	}
 
 	char *p = strtok((char*)plaintext, "\n");
 	while (p) {
 		if(strlen(p)<=1) break;
-		char username[50];
-		char password[150];
+		char username[MAX_USERNAME];
+		char password[MAX_PASSWORD];
 		char* pos = strchr(p, ':');
 		strncpy(username, p, pos-p);
-		strncpy(password, pos+1, 150);
+		strncpy(password, pos+1, MAX_USERNAME);
 
 		userlist.insert( pair<string,string>(username, password) );
 		p = strtok(NULL, "\n");
@@ -275,17 +283,20 @@ int __decrypt(unsigned char *ciphertext, int ciphertext_len,
 	}
 }
 
-
-
 int main()
 {
 	AuthenticateUser cu;
 	cu.Load("list.txt");
 	cu.Print();
-	cout << cu.VerifyUser("STAR", "A") << endl;
-	cout << cu.VerifyUser("STAR", "pw") << endl;
-	cout << cu.VerifyUser("STAR2", "PW") << endl;
-	cout << cu.VerifyUser("STAR", "PW") << endl;
-
+	string username, password;
+	//prevent buffer overflow attack
+	cin.width(MAX_USERNAME);
+	while (cin >> username >> password) {
+		if (cu.VerifyUser(username, password))
+			cout << "Welcome to the system, " << username 
+				 << "!\"" << endl;
+		else
+			cout << "Authentication fail." << endl;
+	}
 	return 0;
 }
