@@ -146,6 +146,7 @@ char privateKey[]="-----BEGIN PRIVATE KEY-----\n"\
 
 
 	unsigned char encrypted[4098]={};
+	unsigned char decrypted[4098]={};
 	int ret;
 	unsigned char key[32], iv[16];	//256 bit key
 	unsigned char ciphertext[10000];
@@ -169,6 +170,8 @@ if(encrypted_length == -1)
 printLastError("Private Encrypt failed");
 exit(0);
 }
+
+printf("!!!!!!!!%d\n", encrypted_length);
 
 int decrypted_length = public_decrypt(encrypted,encrypted_length,publicKey, decrypted);
 if(decrypted_length == -1)
