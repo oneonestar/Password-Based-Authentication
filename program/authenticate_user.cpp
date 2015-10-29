@@ -33,16 +33,18 @@
 #include <openssl/evp.h>
 #include <openssl/err.h>
 #include <openssl/rand.h>
-#include <openssl/evp.h>
 #include <openssl/pem.h>
 #include <openssl/bio.h>
 #include <openssl/rsa.h>
+#include <stdint.h>
+#include <assert.h>
 #include <string.h>
 #include <stdio.h>
 
 extern "C" {
 	#include "libscrypt.h"
 	#include "b64.h"
+	#include "base64.h"
 }
 
 //use public key to decrypt the data in list.txt
@@ -153,6 +155,7 @@ bool AuthenticateUser::VerifyUser(const string username, const string password) 
 		//printf("Password is correct!\n");
 	}
 }
+
 void AuthenticateUser::Load(const string filename) {
 	int len;
 	unsigned char ciphertext[65535];
@@ -163,6 +166,7 @@ void AuthenticateUser::Load(const string filename) {
 		exit(EXIT_FAILURE);
 	}
 
+	char b64file[65536]={};
 	unsigned char plaintext[65536]={};
 	int ret;
 	unsigned char rsa_key_iv_tag[512];
@@ -170,9 +174,19 @@ void AuthenticateUser::Load(const string filename) {
 	//unsigned char key[32], iv[16];	//256 bit key
 	//unsigned char tag[16];
 
-
-	fread(rsa_key_iv_tag, sizeof(char), 512, f);
-	ret = fread(ciphertext, sizeof(char), 5000, f);
+	//fgets(b64file, sizeof(b64file), f);
+	ret = fread(b64file, sizeof(char), sizeof(b64file), f);
+	b64file[ret] = '\0';
+	if (ret<=512) {
+		cerr << "Failed to decrypt file!" << endl;
+		exit(EXIT_FAILURE);
+	}
+	size_t length = Base64decode_len(b64file)-2;
+	char *base64DecodeOutput = new char[length+2];
+	Base64decode(base64DecodeOutput, b64file);
+	memcpy(rsa_key_iv_tag, base64DecodeOutput, 512);
+	memcpy(ciphertext, base64DecodeOutput+512, length-512);
+	ret = length-512;
 
 	int decrypted_length = public_decrypt(rsa_key_iv_tag, 512, publicKey, key_iv_tag);
 	if(decrypted_length == -1) {
@@ -225,7 +239,7 @@ int __decrypt(unsigned char *ciphertext, int ciphertext_len,
 
 	/* Set IV length. Not necessary if this is 12 bytes (96 bits) */
 	if(!EVP_CIPHER_CTX_ctrl(ctx, EVP_CTRL_GCM_SET_IVLEN, 16, NULL))
-				handleErrors();
+		handleErrors();
 
 	/* Initialise key and IV */
 	if(!EVP_DecryptInit_ex(ctx, NULL, NULL, key, iv)) handleErrors();

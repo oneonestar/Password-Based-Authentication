@@ -39,6 +39,7 @@
 #include <openssl/rsa.h>
 #include <string.h>
 #include <stdio.h>
+#include <stdint.h>
 
 extern "C" {
 	#include "libscrypt.h"
@@ -119,6 +120,28 @@ class CreateUser {
 		static string create_mcf(char const *password);
 };
 
+//Encodes a binary safe base 64 string
+int Base64Encode(const unsigned char* buffer, size_t length, char** b64text) { 
+	BIO *bio, *b64;
+	BUF_MEM *bufferPtr;
+
+	b64 = BIO_new(BIO_f_base64());
+	bio = BIO_new(BIO_s_mem());
+	bio = BIO_push(b64, bio);
+
+	BIO_set_flags(bio, BIO_FLAGS_BASE64_NO_NL); //Ignore newlines - write everything in one line
+	BIO_write(bio, buffer, length);
+	BIO_flush(bio);
+	BIO_get_mem_ptr(bio, &bufferPtr);
+	BIO_set_close(bio, BIO_NOCLOSE);
+	BIO_free_all(bio);
+
+	*b64text = (char*) malloc((bufferPtr->length + 1) * sizeof(char));
+	memcpy(*b64text, bufferPtr->data, bufferPtr->length);
+	(*b64text)[bufferPtr->length] = '\0';
+
+	return 0; //success
+}
 
 
 int padding = RSA_PKCS1_PADDING;
@@ -209,6 +232,7 @@ int encrypt(string plaintext, unsigned char *encrypted, int *len) {
 		printLastError("Private Encrypt failed");
 		exit(EXIT_FAILURE);
 	}
+	return 0;
 }
 
 
@@ -278,8 +302,11 @@ void CreateUser::Save(const string filename) {
 		buffer << it->first << ":" << it->second << endl;
 	encrypt(buffer.str(), encrypted, &len);
 
+	char *base64encode;
+	Base64Encode(encrypted, len, &base64encode);
+	printf("%s\n", base64encode);
 	//write to file
-	fwrite(encrypted, sizeof(char), len, f);
+	fwrite(base64encode, sizeof(char), strlen(base64encode), f);
 	fclose(f);
 }
 
