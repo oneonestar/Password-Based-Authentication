@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 612 792"
+   style="enable-background:new 0 0 612 792;"
+   xml:space="preserve"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Untitled-2.svg"><metadata
+     id="metadata4532"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs4530" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="704"
+     id="namedview4528"
+     showgrid="false"
+     inkscape:zoom="1.6856283"
+     inkscape:cx="211.0799"
+     inkscape:cy="528.66457"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" /><style
+     type="text/css"
+     id="style4328">
+	.st0{fill:#00CCFF;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#010101;}
+	.st2{font-family:'ArialMT';}
+	.st3{font-size:14px;}
+	.st4{fill:none;}
+	.st5{font-size:36px;}
+	.st6{fill:#3DB54A;stroke:#010101;stroke-miterlimit:10;}
+	.st7{font-size:22px;}
+	.st8{fill:none;stroke:#010101;stroke-miterlimit:10;}
+	.st9{font-size:18px;}
+	.st10{font-size:22.2061px;}
+	.st11{fill:#F8EF6D;stroke:#010101;stroke-miterlimit:10;}
+	.st12{fill:#808000;stroke:#010101;stroke-miterlimit:10;}
+	.st13{fill:#F69FA2;stroke:#010101;stroke-miterlimit:10;}
+	.st14{fill:#D5539E;stroke:#010101;stroke-miterlimit:10;}
+	.st15{font-size:14.8041px;}
+	.st16{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st17{fill:#F9EF6B;stroke:#000000;stroke-miterlimit:10;}
+	.st18{fill:#2AFF55;stroke:#000000;stroke-miterlimit:10;}
+	.st19{enable-background:new    ;}
+	.st20{fill:#FF0000;}
+	.st21{font-family:'MyriadPro-Regular';}
+	.st22{font-size:14.7599px;}
+	.st23{font-size:13.749px;}
+	.st24{font-size:12px;}
+</style><rect
+     x="78.442261"
+     y="627.24225"
+     class="st0"
+     width="290.80927"
+     height="24.615477"
+     id="rect4330"
+     style="fill:#00ccff;stroke:#000000;stroke-width:1.08452463;stroke-miterlimit:10" /><text
+     transform="matrix(1 0 0 1 31.1375 116.7332)"
+     class="st1 st2 st3"
+     id="text4332">Pre-defined:</text>
+<text
+     transform="matrix(1 0 0 1 31.1375 131.1332)"
+     class="st1 st2 st3"
+     id="text4334">RSA Public Key</text>
+<rect
+     x="219.1"
+     y="43"
+     class="st4"
+     width="250"
+     height="68.8"
+     id="rect4336" /><text
+     transform="matrix(1 0 0 1 160.112 68.5596)"
+     class="st1 st2 st5"
+     id="text4338">authenticate_user </text>
+<rect
+     x="92.9"
+     y="154.6"
+     class="st6"
+     width="480.1"
+     height="57.6"
+     id="rect4340" /><text
+     transform="matrix(1 0 0 1 288.3168 188.6663)"
+     class="st1 st2 st7"
+     id="text4342">list.txt</text>
+<g
+     id="g4344"><g
+       id="g4346"><line
+         class="st8"
+         x1="337.8"
+         y1="212.2"
+         x2="337.8"
+         y2="269.5"
+         id="line4348" /><g
+         id="g4350"><path
+           class="st1"
+           d="M337.8,272.9c-1.1-1.5-2.9-3.6-4.8-4.8l4.8,1l4.8-1C340.6,269.3,338.8,271.4,337.8,272.9z"
+           id="path4352" /></g></g></g><text
+     transform="matrix(1 0 0 1 348.6 237.7999)"
+     class="st1 st2 st9"
+     id="text4354">hex to binary()</text>
+<rect
+     x="245.4"
+     y="272.9"
+     class="st6"
+     width="324.5"
+     height="57.6"
+     id="rect4356" /><text
+     transform="matrix(1.0343 0 0 1 363.1602 308.3101)"
+     class="st1 st2 st10"
+     id="text4358">Ciphertext</text>
+<rect
+     x="92.9"
+     y="272.9"
+     class="st11"
+     width="178.5"
+     height="57.6"
+     id="rect4360" /><text
+     transform="scale(1.0170054,0.98327894)"
+     class="st1 st2 st10"
+     id="text4362"
+     x="95.417389"
+     y="301.63495"
+     style="font-size:22.58372498px;font-family:ArialMT;fill:#010101">RSA Encrypted</text>
+<text
+     transform="scale(1.0170054,0.98327894)"
+     class="st1 st2 st10"
+     id="text4364"
+     x="99.893074"
+     y="326.65286"
+     style="font-size:22.58372498px;font-family:ArialMT;fill:#010101">(Key, IV, MAC)</text>
+<rect
+     x="4.4"
+     y="364"
+     class="st12"
+     width="127.4"
+     height="48.1"
+     id="rect4366" /><rect
+     x="135.1"
+     y="444.7"
+     class="st13"
+     width="150.6"
+     height="48.1"
+     id="rect4368" /><rect
+     x="105.02116"
+     y="540.73944"
+     class="st14"
+     width="475.75165"
+     height="67.321053"
+     id="rect4370"
+     style="fill:#d5539e;stroke:#010101;stroke-width:1.07894456;stroke-miterlimit:10" /><rect
+     x="164.6"
+     y="546.9"
+     class="st4"
+     width="408.8"
+     height="55.1"
+     id="rect4372" /><text
+     transform="scale(1.0170054,0.98327894)"
+     class="st1 st2 st15"
+     id="text4374"
+     x="105.92153"
+     y="570.9447"
+     style="font-size:15.05585003px;font-family:ArialMT;fill:#010101">Username1:$s1$&lt;N, r, p&gt;$&lt;salt1&gt;$&lt;hashed password1&gt;\n</text>
+<text
+     transform="scale(1.0170054,0.98327894)"
+     class="st1 st2 st15"
+     id="text4376"
+     x="105.92153"
+     y="589.0473"
+     style="font-size:15.05585003px;font-family:ArialMT;fill:#010101">Username2:$s1$&lt;N, r, p&gt;$&lt;salt2&gt;$&lt;hashed password2&gt;\n</text>
+<text
+     transform="scale(1.0170054,0.98327894)"
+     class="st1 st2 st15"
+     id="text4378"
+     x="305.97452"
+     y="607.0484"
+     style="font-size:15.05585003px;font-family:ArialMT;fill:#010101">(Plaintext)</text>
+<text
+     transform="matrix(1.0343 0 0 1 183.5335 473.582)"
+     class="st1 st2 st15"
+     id="text4380">Key, IV</text>
+<text
+     transform="matrix(1.0343 0 0 1 443.4357 467.9506)"
+     class="st1 st2 st15"
+     id="text4382">Decryption</text>
+<text
+     transform="matrix(1.0343 0 0 1 429.5764 485.7504)"
+     class="st1 st2 st15"
+     id="text4384">(AES-256-GCM)</text>
+<text
+     transform="matrix(1.0343 0 0 1 10.9048 383.5186)"
+     class="st1 st2 st15"
+     id="text4386">RSA Public Key</text>
+<text
+     transform="matrix(1.0343 0 0 1 18.7656 401.3184)"
+     class="st1 st2 st15"
+     id="text4388">(Pre-defined)</text>
+<text
+     transform="scale(1.0170054,0.98327894)"
+     class="st1 st2 st15"
+     id="text4390"
+     x="165.70749"
+     y="390.91837"
+     style="font-size:15.05585003px;font-family:ArialMT;fill:#010101">Decryption</text>
+<text
+     transform="scale(1.0170054,0.98327894)"
+     class="st1 st2 st15"
+     id="text4392"
+     x="187.13313"
+     y="409.02087"
+     style="font-size:15.05585003px;font-family:ArialMT;fill:#010101">(RSA)</text>
+<rect
+     x="155.2"
+     y="364"
+     class="st8"
+     width="112.1"
+     height="48.1"
+     id="rect4394" /><rect
+     x="418.81564"
+     y="448.21567"
+     class="st8"
+     width="136.9742"
+     height="48.068691"
+     id="rect4396"
+     style="fill:none;stroke:#010101;stroke-width:1.03130877;stroke-miterlimit:10" /><g
+     id="g4398"><g
+       id="g4400"><line
+         class="st8"
+         x1="515.3"
+         y1="330.2"
+         x2="515.3"
+         y2="435"
+         id="line4402" /><g
+         id="g4404"><path
+           class="st1"
+           d="M515.3,447.9c-1.1-6-2.9-13.8-4.8-18.3l4.8,3.6l4.8-3.6C518.1,434.2,516.3,441.7,515.3,447.9z"
+           id="path4406" /></g></g></g><g
+     id="g4408"><g
+       id="g4410"><line
+         class="st8"
+         x1="285.7"
+         y1="468.8"
+         x2="409.7"
+         y2="468.8"
+         id="line4412" /><g
+         id="g4414"><path
+           class="st1"
+           d="M417.3,468.8c-3.4,1.1-8.1,2.9-10.7,4.8l2.1-4.8l-2.1-4.8C409.3,466,413.9,467.8,417.3,468.8z"
+           id="path4416" /></g></g></g><g
+     id="g4418"><g
+       id="g4420"><line
+         class="st8"
+         x1="206.4"
+         y1="330.5"
+         x2="206.4"
+         y2="360.3"
+         id="line4422" /><g
+         id="g4424"><path
+           class="st1"
+           d="M206.4,364c-1.1-1.7-2.9-3.9-4.8-5.2l4.8,1l4.8-1C209.2,360.1,207.4,362.3,206.4,364z"
+           id="path4426" /></g></g></g><g
+     id="g4428"><g
+       id="g4430"><line
+         class="st8"
+         x1="206.4"
+         y1="412.1"
+         x2="206.4"
+         y2="441.1"
+         id="line4432" /><g
+         id="g4434"><path
+           class="st1"
+           d="M206.4,444.7c-1.1-1.6-2.9-3.8-4.8-5.1l4.8,1l4.8-1C209.2,440.9,207.4,442.9,206.4,444.7z"
+           id="path4436" /></g></g></g><line
+     class="st4"
+     x1="131.8"
+     y1="388"
+     x2="155.2"
+     y2="388"
+     id="line4438" /><g
+     id="g4440"><g
+       id="g4442"><line
+         class="st16"
+         x1="131.8"
+         y1="388"
+         x2="149.2"
+         y2="388"
+         id="line4444" /><g
+         id="g4446"><path
+           d="M155.2,388c-2.8,1.1-6.4,2.9-8.5,4.8l1.7-4.8l-1.7-4.8C148.8,385.2,152.4,387,155.2,388z"
+           id="path4448" /></g></g></g><g
+     id="g4450"><g
+       id="g4452"><line
+         class="st8"
+         x1="483.1"
+         y1="496.3"
+         x2="483.1"
+         y2="535.6"
+         id="line4454" /><g
+         id="g4456"><path
+           class="st1"
+           d="M483.1,540.4c-1.1-2.3-2.9-5.2-4.8-6.9l4.8,1.4l4.8-1.4C485.9,535.3,484.1,538.1,483.1,540.4z"
+           id="path4458" /></g></g></g><rect
+     x="381.4"
+     y="402.7"
+     class="st17"
+     width="96.4"
+     height="32.7"
+     id="rect4460" /><text
+     transform="matrix(1.0343 0 0 1 396.1861 423.9818)"
+     class="st2 st15"
+     id="text4462">MAC(tag)</text>
+<g
+     id="g4464"><g
+       id="g4466"><line
+         class="st16"
+         x1="434.4"
+         y1="389"
+         x2="434.4"
+         y2="397"
+         id="line4468" /><g
+         id="g4470"><path
+           d="M434.4,403c-1.1-2.8-2.9-6.4-4.8-8.5l4.8,1.7l4.8-1.7C437.2,396.5,435.4,400.1,434.4,403z"
+           id="path4472" /></g></g></g><line
+     class="st4"
+     x1="412"
+     y1="388.8"
+     x2="267.3"
+     y2="388.8"
+     id="line4474" /><line
+     class="st8"
+     x1="434.8"
+     y1="388.8"
+     x2="267.3"
+     y2="388.8"
+     id="line4476" /><g
+     id="g4478"><g
+       id="g4480"><line
+         class="st16"
+         x1="434.4"
+         y1="435.3"
+         x2="434.4"
+         y2="442.9"
+         id="line4482" /><g
+         id="g4484"><path
+           d="M434.4,448.7c-1.1-2.7-2.9-6.2-4.8-8.2l4.8,1.6l4.8-1.6C437.2,442.5,435.4,446,434.4,448.7z"
+           id="path4486" /></g></g></g><rect
+     x="273.9"
+     y="686"
+     class="st18"
+     width="190.2"
+     height="48.1"
+     id="rect4488" /><text
+     transform="matrix(1.0343 0 0 1 83.9387 643.578)"
+     class="st2 st15"
+     id="text4490">Input: {{Username1, Password1}...}</text>
+<text
+     transform="matrix(1.0343 0 0 1 338.6513 705.5504)"
+     class="st19"
+     id="text4492"><tspan
+       x="0"
+       y="0"
+       class="st2 st15"
+       id="tspan4494">Compare</tspan><tspan
+       x="-20.2"
+       y="17.8"
+       class="st2 st15"
+       id="tspan4496">(Accept/Reject)</tspan></text>
+<g
+     id="g4498"><g
+       id="g4500"><line
+         class="st16"
+         x1="285.7"
+         y1="651.9"
+         x2="285.7"
+         y2="678.9"
+         id="line4502" /><g
+         id="g4504"><path
+           d="M285.7,686.5c-1.1-3.6-2.9-8.2-4.8-10.9l4.8,2.2l4.8-2.2C288.5,678.4,286.7,683,285.7,686.5z"
+           id="path4506" /></g></g></g><g
+     id="g4508"><g
+       id="g4510"><line
+         class="st8"
+         x1="418.8"
+         y1="608.1"
+         x2="418.8"
+         y2="677.5"
+         id="line4512" /><g
+         id="g4514"><path
+           class="st1"
+           d="M418.8,686c-1.1-4-2.9-9.1-4.8-12.1l4.8,2.4l4.8-2.4C421.5,676.9,419.8,681.9,418.8,686z"
+           id="path4516" /></g></g></g><text
+     transform="matrix(0.888 0 0 1 218.4726 360.7177)"
+     class="st20 st21 st22"
+     id="text4518">Authenticity</text>
+<text
+     transform="scale(0.95833191,1.0434798)"
+     id="text4520"
+     x="380.11496"
+     y="473.71539"
+     style="font-size:11.49998283px"><tspan
+       x="380.11496"
+       y="473.71539"
+       class="st20 st21 st23"
+       id="tspan4522"
+       style="font-size:13.17610455px;font-family:MyriadPro-Regular;fill:#ff0000">Integrity</tspan><tspan
+       x="361.61914"
+       y="489.52789"
+       class="st20 st21 st23"
+       id="tspan4524"
+       style="font-size:13.17610455px;font-family:MyriadPro-Regular;fill:#ff0000">Confidentiality </tspan></text>
+<text
+     class="st21 st24"
+     id="text4526"
+     x="90.261703"
+     y="669.63281"
+     style="font-size:12px;font-family:MyriadPro-Regular">Scrypt(Password1, salt1, N, r, p)</text>
+</svg>

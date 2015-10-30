@@ -65,6 +65,8 @@
 \documentclass[journal]{IEEEtran}
 \usepackage{blindtext}
 \usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[outdir=./]{epstopdf} %converting to PDF
 %\usepackage{graphicx}
 
 % Some very useful LaTeX packages include:
@@ -478,9 +480,21 @@ Scrypt, key derivation function, Galois/Counter Mode(GCM), AES, RSA, Digital Sig
 % creates the second title. It will be ignored for other modes.
 \IEEEpeerreviewmaketitle
 
-
-
 \section{Operating system}
+\begin{figure*}
+\centering
+\begin{minipage}{0.45\textwidth}
+\centering
+\includegraphics[width=\linewidth]{create.eps} 
+\caption{Workflow of create\_user module}
+\end{minipage}\hfill
+\begin{minipage}{0.45\textwidth}
+\centering
+\includegraphics[width=\linewidth]{authenticate.eps}
+\caption{Workflow of authenticate\_user module}
+\end{minipage}
+\end{figure*}
+
 Most of the routers come with a default operating system and a web interface. These OSes usually have been optimized by the manufacturer to enable some hardware specific functions, such as hardware NAT. However, the lack of command prompt and root privilege limit the feasibility of executing measurement tools.
 
 

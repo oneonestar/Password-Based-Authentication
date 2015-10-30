@@ -280,9 +280,6 @@ void CreateUser::AddUser(const string username, const string password) {
 }
 
 void CreateUser::Save(const string filename) {
-	int len;
-	unsigned char encrypted[65535];
-
 	//open file
 	FILE *f = fopen(filename.c_str(), "w");
 	if (!f) {
@@ -294,6 +291,8 @@ void CreateUser::Save(const string filename) {
 	stringstream buffer;
 	for(auto it = userlist.cbegin(); it != userlist.cend(); it++)
 		buffer << it->first << ":" << it->second << endl;
+	unsigned char *encrypted = new unsigned char[buffer.str().length()+16+512];
+	int len;
 	encrypt(buffer.str(), encrypted, &len);
 
 	//use hex to encode the file since the list.txt is required to be a text file
@@ -304,6 +303,7 @@ void CreateUser::Save(const string filename) {
 	//write to file
 	fwrite(hexEncoded, sizeof(char), strlen(hexEncoded), f);
 	fclose(f);
+	delete [] encrypted;
 }
 
 void CreateUser::Print() {
@@ -359,6 +359,8 @@ int main()
 {
 	CreateUser cu;
 	string username, password;
+	cout << "Please enter your username and password (split by space or newline):" << endl;
+	cin.width(MAX_USERNAME);
 	while (cin >> username >> password) {
 		cu.AddUser(username, password);
 	}
