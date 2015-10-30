@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.10.16)  30 OCT 2015 12:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.10.16)  30 OCT 2015 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -161,6 +161,31 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen117
 \Gin@req@width=\dimen118
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count110
+\lst@gtempboxa=\box27
+\lst@token=\toks16
+\lst@length=\count111
+\lst@currlwidth=\dimen119
+\lst@column=\count112
+\lst@pos=\count113
+\lst@lostspace=\dimen120
+\lst@width=\dimen121
+\lst@newlines=\count114
+\lst@lineno=\count115
+\lst@maxwidth=\dimen122
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+\c@lstnumber=\count116
+\lst@skipnumbers=\count117
+\lst@framebox=\box28
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/03/04 1.5c listings configuration
+))
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
+
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 
@@ -216,76 +241,78 @@ e
 (./security_assignment2.aux)
 \openout1 = `security_assignment2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 388.
-LaTeX Font Info:    ... okay on input line 388.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 388.
-LaTeX Font Info:    ... okay on input line 388.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 388.
-LaTeX Font Info:    ... okay on input line 388.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 388.
-LaTeX Font Info:    ... okay on input line 388.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 388.
-LaTeX Font Info:    ... okay on input line 388.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 388.
-LaTeX Font Info:    ... okay on input line 388.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 388.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 389.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
-\scratchdimen=\dimen119
-\scratchbox=\box27
-\nofMPsegments=\count111
-\nofMParguments=\count112
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count113
-\MPscratchDim=\dimen120
-\MPnumerator=\count114
-\makeMPintoPDFobject=\count115
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count118
+\scratchdimen=\dimen123
+\scratchbox=\box29
+\nofMPsegments=\count119
+\nofMParguments=\count120
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count121
+\MPscratchDim=\dimen124
+\MPnumerator=\count122
+\makeMPintoPDFobject=\count123
+\everyMPtoPDFconversion=\toks18
 )
-Underfull \hbox (badness 3039) in paragraph at lines 469--471
+\c@lstlisting=\count124
+
+Underfull \hbox (badness 3039) in paragraph at lines 470--472
 []\T1/ptm/b/it/9 Keywords\T1/ptm/b/n/9 ---\T1/ptm/b/it/9 Scrypt, key deriva-tio
-n func-tion, Ga-lois/Counter
+n func-tion, Ga-lois/-Counter
  []
 
 Package epstopdf Info: Source file: <create.eps>
@@ -296,18 +323,18 @@ Package epstopdf Info: Source file: <create.eps>
 (epstopdf)                    size: 16413 bytes
 (epstopdf)             Command: <repstopdf --outfile=./create-eps-converted-to.
 pdf create.eps>
-(epstopdf)             \includegraphics on input line 488.
+(epstopdf)             \includegraphics on input line 493.
 Package epstopdf Info: Output file is already uptodate.
 <./create-eps-converted-to.pdf, id=1, 473.77pt x 570.13pt>
 File: ./create-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./create-eps-converted-to.pdf>
-Package pdftex.def Info: ./create-eps-converted-to.pdf used on input line 488.
+Package pdftex.def Info: ./create-eps-converted-to.pdf used on input line 493.
 (pdftex.def)             Requested size: 235.84328pt x 283.81157pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 490.
+(Font)              <7> on input line 495.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 490.
+(Font)              <5> on input line 495.
 Package epstopdf Info: Source file: <authenticate.eps>
 (epstopdf)                    date: 2015-10-30 11:45:44
 (epstopdf)                    size: 40895 bytes
@@ -316,7 +343,7 @@ Package epstopdf Info: Source file: <authenticate.eps>
 (epstopdf)                    size: 16309 bytes
 (epstopdf)             Command: <repstopdf --outfile=./authenticate-eps-convert
 ed-to.pdf authenticate.eps>
-(epstopdf)             \includegraphics on input line 493.
+(epstopdf)             \includegraphics on input line 498.
 Package epstopdf Info: Output file is already uptodate.
 
 <./authenticate-eps-converted-to.pdf, id=2, 464.73625pt x 559.08875pt>
@@ -324,16 +351,16 @@ File: ./authenticate-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./authenticate-eps-converted-to.pdf>
 Package pdftex.def Info: ./authenticate-eps-converted-to.pdf used on input line
- 493.
+ 498.
 (pdftex.def)             Requested size: 235.84328pt x 283.72386pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 538--539
+Underfull \hbox (badness 10000) in paragraph at lines 541--542
 []\T1/ptm/m/n/8 http://stackoverflow.com/questions/1220751/how-to-choose-an-aes
 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 542--543
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
 []\T1/ptm/m/n/8 http://crypto.stackexchange.com/questions/6842/how-to-choose-
  []
 
@@ -344,19 +371,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 542--543
 ] [2 <./create-eps-converted-to.pdf> <./authenticate-eps-converted-to.pdf>]
 (./security_assignment2.aux) ) 
 Here is how much of TeX's memory you used:
- 2647 strings out of 495025
- 40623 string characters out of 6181514
- 92579 words of memory out of 5000000
- 5842 multiletter control sequences out of 15000+600000
+ 3834 strings out of 495025
+ 58115 string characters out of 6181514
+ 112726 words of memory out of 5000000
+ 7017 multiletter control sequences out of 15000+600000
  104817 words of font info for 103 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 42i,7n,23p,393b,270s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,7n,32p,358b,837s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/ba
 se/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on security_assignment2.pdf (2 pages, 77484 bytes).
+Output written on security_assignment2.pdf (2 pages, 77331 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream

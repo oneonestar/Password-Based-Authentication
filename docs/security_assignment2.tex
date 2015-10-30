@@ -66,6 +66,7 @@
 \usepackage{blindtext}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
+\usepackage{listings}
 \usepackage[outdir=./]{epstopdf} %converting to PDF
 %\usepackage{graphicx}
 
@@ -456,7 +457,7 @@
 
 
 \begin{abstract}
-Lightweight embedded systems such as home routers and Raspberry Pi are easy to deploy as a measurement probes. It is important to understand the pros and cons of using these devices as probes. In this article, we will compare the operating system and hardware architecture of embedded devices and routers. The data bus problem of Raspberry Pi will also be addressed.
+This document provides the compilation procedures, execution instructions, design concerns and implementation details of of the Password-Based Authentication System. We will discuss the assumptions and requirements of the system. We will also compare different existing tools and explain the choice of libraries used in the system.
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -480,7 +481,12 @@ Scrypt, key derivation function, Galois/Counter Mode(GCM), AES, RSA, Digital Sig
 % creates the second title. It will be ignored for other modes.
 \IEEEpeerreviewmaketitle
 
-\section{Operating system}
+\section{Compilation}
+The system depends on Openssl and Libcrypt.
+\begin{lstlisting}
+Put your code here.
+\end{lstlisting}
+
 \begin{figure*}
 \centering
 \begin{minipage}{0.45\textwidth}
@@ -494,8 +500,6 @@ Scrypt, key derivation function, Galois/Counter Mode(GCM), AES, RSA, Digital Sig
 \caption{Workflow of authenticate\_user module}
 \end{minipage}
 \end{figure*}
-
-Most of the routers come with a default operating system and a web interface. These OSes usually have been optimized by the manufacturer to enable some hardware specific functions, such as hardware NAT. However, the lack of command prompt and root privilege limit the feasibility of executing measurement tools.
 
 
 \ifCLASSOPTIONcaptionsoff

@@ -156,7 +156,13 @@ bool AuthenticateUser::VerifyUser(const string username, const string password) 
 	map<string,string>::iterator it;
 	it = userlist.find(username);
 
-	if (it == userlist.end()) return false;
+	if (it == userlist.end()) {
+		//no record is find
+		//to prevent timing attack, calculate once scrypt and discard the result
+		char dummy[] = "$s1$110801$eoxOLUNIWjyCTQMpHpFV9g==$jQnqJ/RijXlqO9kiKxeLrCOCTsiGgkf+xTpEQHMpSx2BNmC6ckxScioF2qhzL0XLwaGzxx4LQ5wK1s/8wJZpzA==";
+		libscrypt_check(dummy, password.c_str());
+	   	return false;
+	}
 	memcpy(mcf, it->second.c_str(), SCRYPT_MCF_LEN);	//skip username
 	int ret = libscrypt_check(mcf, password.c_str());
 	if(ret<0) {
@@ -179,10 +185,6 @@ unsigned int toInt(char c) {
 	if(c >= 'A' && c <= 'F') return 10 + c - 'A';
 	return 255;
 }
-void uncharToChar(unsigned char ar1[], char ar2[], int hm) {
-    for(int i=0; i<hm; i++)
-        ar2[i]=static_cast<char>(ar1[i]);
-}
 
 void AuthenticateUser::Load(const string filename) {
 	//open file
@@ -203,7 +205,7 @@ void AuthenticateUser::Load(const string filename) {
 	try {
 		hexfile = new char[length+1];
 		hexDecodeOutput = new unsigned char[length];
-		plaintext = new unsigned char[65546];
+		plaintext = new unsigned char[length+1];
 	} catch(std::bad_alloc& exc) {
 		cerr << "Cannot allocate enough memory." << endl;
 		exit(EXIT_FAILURE);
@@ -323,18 +325,18 @@ int main()
 {
 	AuthenticateUser cu;
 	cu.Load("list.txt");
+	cout << "Please enter your username and password (split by space or newline)." << endl;
+	cout << "Use EOF to exit (Ctrl+D)." << endl;
 
 	//input loop
 	string username, password;
 	//prevent buffer overflow attack
-	cu.Print();
-	cout << "Please enter your username and password (split by space or newline):" << endl;
 	cin.width(MAX_USERNAME);
 	while (cin >> username >> password) {
 		if (cu.VerifyUser(username, password))
 			cout << "Welcome to the system, " << username 
-				 << "!\"" << endl;
-		else
+				 << "!" << endl;
+		else 
 			cout << "Authentication fail." << endl;
 	}
 

@@ -276,6 +276,7 @@ int __encrypt(const unsigned char *plaintext, int plaintext_len,
 
 void CreateUser::AddUser(const string username, const string password) {
 	string MCF = create_mcf(password.c_str());
+	cout << username << ":" << MCF << endl;
 	userlist.insert( pair<string, string>(username, MCF) );
 }
 
@@ -359,12 +360,13 @@ int main()
 {
 	CreateUser cu;
 	string username, password;
-	cout << "Please enter your username and password (split by space or newline):" << endl;
+	cout << "Please enter your username and password (split by space or newline)." << endl;
+	cout << "Use EOF to exit (Ctrl+D)." << endl;
 	cin.width(MAX_USERNAME);
 	while (cin >> username >> password) {
 		cu.AddUser(username, password);
 	}
-	cu.Print();
+	//cu.Print();
 	cu.Save("list.txt");
 
 	return 0;
