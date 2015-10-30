@@ -136,7 +136,7 @@ static string create_mcf(char const *password);
 //Create RSA structure using either public key or private key
 RSA * createRSA(unsigned char * key, int isPublic);
 
-//Encrypt file
+//Encrypt data using RSA private key
 int private_encrypt(unsigned char * data,int data_len,unsigned char * key, unsigned char *encrypted);
 
 //Handle errors during aes-256-gcm encryption
