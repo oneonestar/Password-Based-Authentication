@@ -44,7 +44,6 @@
 extern "C" {
 	#include "libscrypt.h"
 	#include "b64.h"
-	#include "base64.h"
 }
 
 //use public key to decrypt the data in list.txt
@@ -92,7 +91,7 @@ class AuthenticateUser {
 RSA * createRSA(unsigned char * key, int isPublic);
 
 //Decrypt data using RSA public key
-int public_decrypt(unsigned char * enc_data,int data_len,unsigned char * key, unsigned char *decrypted)
+int public_decrypt(unsigned char * enc_data,int data_len,unsigned char * key, unsigned char *decrypted);
 
 //Handle errors during aes-256-gcm encryption
 void handleErrors(void);
