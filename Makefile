@@ -25,8 +25,10 @@ test: all
 	@cat list.txt
 	@echo
 #authenticate user
-	@printf "\n\033[0;32m./build/authenticate_user\033[0m\n"
-	@./build/authenticate_user
+	@printf "\n\033[0;32m./build/authenticate_user < test/test1.test\033[0m\n"
+	@./build/authenticate_user < test/test1.test
+	@printf "\n\033[0;32mTesting Finished.\033[0m\n"
+	@printf "\033[0;32mShould be 6 failed and 3 succeed.\033[0m\n"
 
 .PHONY: test clean
 
